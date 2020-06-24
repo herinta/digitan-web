@@ -1,0 +1,45 @@
+
+.card-small{
+    border: 1px solid #DEE1E5;
+    border-radius: 14px;
+    text-align: center;
+    width: 255px;
+    height: 312px; 
+    margin-left: ; 
+    margin-top: 20px;
+    padding: 28px 15px;
+}
+
+.card-pembiayaan{
+    width: 350px;
+    height: 490px;
+}
+
+.card-pembiayaan .tittle-card {
+    padding: 15px 24px;
+    
+}
+
+.card-pembiayaan .item{
+    width: 50%;
+    height: 60px;
+}
+
+.ml-6{
+    margin-left: 58px;
+}
+
+.pencapaian .card-small{
+    background: transparent;
+    border: none;
+}
+
+.alasan .content .item-list{
+    width: 270px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.alasan .content .item-group{
+    margin-left: 110px;
+}

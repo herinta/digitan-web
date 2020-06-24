@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* Universal */
+section{
+    margin-bottom: 120px;
+}
+input{
+    width: 100%;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6F7981;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.btn-white{
+    color: #49A010;
+    font-weight: 500;
+    font-size: 16px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 24px;
+}
+    .btn-white:hover{
+        color: #FFFFFF;
+        background-color: #49A010;
+        border-radius: 4px;
+    }
+
+.btn-green{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    background: #49A010;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 24px;
+}
+    .btn-green:hover{
+        color: #49A010;
+        background-color: #FFFFFF;
+        border: 2px solid #49A010;
+        border-radius: 4px;
+    }
+.btn-green-outfill{
+    color: #49A010;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #49A010;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 24px;
+}
+ .btn-green-outfill:hover{
+    color: #49A010;
+    background-color: #FFFFFF;
+    border: 2px solid #49A010;
+    border-radius: 4px;
+  }
+
+    
+.link-green{
+    font-weight: 500;
+    font-size: 16px;
+    color: #49A010 !important;
+    background-color: transparent;
+    border: none;
+}
+    .link-green:hover{
+        background-color: #49A010;
+        color: #FFFFFF;
+    }
+
+.btn-white-nofill{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF !important;
+    background-color: transparent;
+    border: none;
+}
+    .link-white-nofill:hover{
+        background-color: #FFFFFF;
+        color: #49A010;
+    }
+
+/* ====================== */
+
+
+
+/* NAVBAR */
+.logo-brand {
+    width: 208px;
+}
+.logo-brand img{
+    width: 180px;
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .navlink{
+    font-size: 16px;
+    color: #B0B7BC;
+}
+.navbar .active{
+    color: #1F2A36;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* =========================== */
+
+
+/* Register */
+.register{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/image/header.svg');
+}
+
+
+.register h1{
+    padding-top: 68px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.register form{
+    margin-top: 40px;
+    width: 450px;
+}
+
+.register input{
+    border: 1px solid #C7CCD0;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+.register input::placeholder{
+    color: #B0B7BC;
+    font-weight: normal;
+    font-size: 18px;
+ }
+ .btn-submit{
+    margin-top: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    background: #49A010;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 24px;
+}
+.register form hr{
+    border: 1px solid #C7CCD0;
+}
+
+.register h6{
+    font-weight: normal;
+    color: #6F7981;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.btn-facebook{
+    background: #475993;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+/* ======================= */
+
+footer{
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.footer{
+    padding-bottom: 42px;
+}
+ .footer p{
+    margin-top: 28px;
+ }
+ .footer h6{
+    font-weight: 600;
+    font-size: 18px;
+    color: #1F2A36;
+ }
+  .footer a{
+    color: #46505C;
+    font-size: 14px;
+  }
+  .footer li{
+    margin-top: 10px;
+  }
+  .footer .social-media{
+      margin-left: 100px;
+      margin-right: 50px;
+  }
+
+/* Langding Page */
+.Modal{
+    background-image: url('../asset/image/modal.svg');
+}
+.modalclose{
+    margin-top: -30px;
+    display: flex;
+    margin-right: -30px;
+}
+.header-image{
+    margin-top: -87px;
+    margin-right: -140px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 680px;
+}
+.navbar{
+    z-index: 2;
+}
+.tittle-home{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 80px;
+    font-size: 48px;
+    line-height: 76px;
+    color: #1F2A36;
+}
+.absoluute{
+    position: absolute;
+}
+
+.illus-petani-investor{
+    margin-top: 400px;   
+}
+.illus-petani-investor h2{
+    font-family: Poppins;
+}
+.illus-petani-investor .investor .d-flex{
+    font-family: "Poppins", sans-serif;
+    justify-content: flex-end;
+    text-align: right;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+    /* cara kerja */
+
+.tittle-line hr{
+    border: 2px solid#49A010;
+    border-radius: 10px;
+    width: 66px;
+
+}
+.tittle-line{
+    width: 66px;
+}
+.pencapaian{
+    background: linear-gradient(111.07deg, #347D03 0.33%, #5FC51B 105.63%);
+    height: 482px;
+}
+
+.pencapaian{
+    color: #FFFFFF;
+}
+.pencapaian .tittle-line hr{
+    border: 2px solid #FFFFFF;
+
+}
+/* ====================== */
+/* Responsive */
+
+@media screen and (min-width: 768px){
+    .navlink .ml-5{
+        margin-left: 0px;
+    }
+    
+}
+/* ============== */
+
+

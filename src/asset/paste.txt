@@ -1,0 +1,67 @@
+<form
+              className='w-full flex-1 mt-8 text-indigo-500'
+              onSubmit={handleSubmit}
+            >
+              <div className='mx-auto max-w-xs relative '>
+                <input
+                  className=''
+                  type='text'
+                  placeholder='Name'
+                  onChange={handleChange('name')}
+                  value={name}
+                />
+                <input
+                  className=''
+                  type='text'
+                  placeholder='Number Phone'
+                  onChange={handleChange('numberPhone')}
+                  value={numberPhone}
+                />
+                <input
+                  className=''
+                  type='email'
+                  placeholder='Email'
+                  onChange={handleChange('email')}
+                  value={email}
+                />
+                <input
+                  className=''
+                  type='password'
+                  placeholder='Password'
+                  onChange={handleChange('password1')}
+                  value={password1}
+                />
+                <input
+                  className=''
+                  type='password'
+                  placeholder='Confirm Password'
+                  onChange={handleChange('password2')}
+                  value={password2}
+                />
+                <button
+                  type='submit'
+                  className=''
+                >
+                  <i className='' />
+                  <span className='ml-3'>{textChange}</span>
+                </button>
+              </div>
+              <div className=''>
+                <div className=''>
+                  Or sign with email or social login
+                </div>
+              </div>
+              <div className=''>
+                <a
+                  className=''
+                  href='/login'
+                  target='_self'
+                >
+                  <span className='ml-4'>Sign In</span>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
