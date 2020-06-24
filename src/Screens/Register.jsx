@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import firebase from '../config/firebase'
 import '../asset/style.css';
 
 import { Container } from 'react-bootstrap';
@@ -8,35 +7,6 @@ import { Newnav, Myfooter } from '../Components/MyComponents';
 import ic_facebook from '../asset/image/ic_facebook.svg'
 
 class Register extends Component {
-  state = {
-    email: '',
-    password: ''
-
-  }
-  handleChangeText = (e) => {
-    // console.log(e.target.id);
-    this.setState({
-      [e.target.id]: e.target.value,
-    })
-    
-  }
-  handleRegisterSubmit = () => {
-    const {email, password} = this.state;
-    console.log('data', email, password);
-
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then(res => {
-      console.log('success', res);
-    })
-    .catch(function(error) {
-      // Handle Errors here.
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-      // ...
-    });
-    
-  }
   render(){
     return(
       <div className=''>

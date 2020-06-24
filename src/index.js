@@ -9,9 +9,6 @@ import Pembiayaanpetani from './Screens/PembiayaanPetani';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import firebase from './config/firebase/index'
-
-console.log('configurasi firebase berhasil',firebase);
 
 ReactDOM.render(
     <BrowserRouter>
