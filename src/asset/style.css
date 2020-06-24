@@ -285,6 +285,26 @@ footer{
     border: 2px solid #FFFFFF;
 
 }
+
+.background-grey{
+    background: #E5E5E5;
+}
+
+.card-large{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.card-white{
+    border-radius: 10px;
+    padding: 22px;
+    background: #FFFFFF;
+}
+
+.info-deskripsi .card-large{
+    width: 760px;
+}
 /* ====================== */
 /* Responsive */
 
@@ -292,8 +312,22 @@ footer{
     .navlink .ml-5{
         margin-left: 0px;
     }
-    
+      
 }
 /* ============== */
 
 
+@media screen and (max-width: 568px){
+    .tittle-home{
+        font-size: 20px;
+    }
+    .header-image{
+        display: none;
+    }
+    .card-large img{
+        width: 200px;
+    }
+    .card-large{
+        padding: 30px;
+    }
+}

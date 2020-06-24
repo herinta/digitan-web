@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 
 import kayumanis from '../asset/image/kayumanis.svg';
 import beras from '../asset/image/beras.svg';
-import jagung from '../asset/image/jagung.svg'
+import jagung from '../asset/image/jagung.svg';
 
 const Pembiayaan = () => {
     return (
@@ -38,7 +38,7 @@ const Pembiayaan = () => {
                     
                 </div>
                 <div className="tittle-card">
-                    <button href="#" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
+                    <button href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
                 </div>
             </Card>
             <Card className="card card-pembiayaan">
@@ -74,7 +74,7 @@ const Pembiayaan = () => {
                 </div>
             </Card>
             <Card className="card card-pembiayaan">
-                <img src={jagung}/>
+                <img src={jagung} alt=""/>
                 <div className="tittle-card">
                     <h5 className="card-title">Card title</h5>
                 </div>

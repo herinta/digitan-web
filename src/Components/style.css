@@ -5,7 +5,6 @@
     text-align: center;
     width: 255px;
     height: 312px; 
-    margin-left: ; 
     margin-top: 20px;
     padding: 28px 15px;
 }
@@ -42,4 +41,12 @@
 
 .alasan .content .item-group{
     margin-left: 110px;
+}
+
+.deskripsi .item-group{
+    margin-left: 80px;
+    margin-top: 32px;
+}
+.deskripsi{
+    margin-left: -80px;
 }
