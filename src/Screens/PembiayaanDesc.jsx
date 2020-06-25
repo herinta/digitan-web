@@ -1,21 +1,10 @@
 
 import React, { Component } from 'react';
 import {Row, Container, Button,} from 'react-bootstrap';
-import {Navbar,  Nav} from 'react-bootstrap';
-
-import logo from '../asset/image/logo.svg';
-import ic_call from '../asset/image/ic_call.svg';
-import ic_email from '../asset/image/ic_email.svg';
-import ic_insta from '../asset/image/ic_insta.svg';
-import ic_fb from '../asset/image/ic_fb.svg';
-import ic_youtube from '../asset/image/ic_youtube.svg';
-import ic_modal from '../asset/image/ic_modal.svg';
-import ic_facebook from '../asset/image/ic_facebook.svg';
-
 
 import '../Components/style.css';
 import '../asset/style.css';
-
+import { Newnav, Myfooter } from '../Components/MyComponents';
 
 import kayu from '../asset/image/kayujambi.svg';
 
@@ -23,32 +12,7 @@ class PembiayaanDesc extends Component{
     render(){
         return(
             <div>
-               <Navbar className="navbar" collapseOnSelect expand="lg"  variant="light">
-                    
-                    <Container>
-                        <Navbar.Brand className="logo-brand" href="/"><img src={ logo } alt=""/></Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="nav-link">
-                            <Nav.Link href="/">Beranda</Nav.Link>
-                            <Nav.Link href="/pembiayaan">Pembiayaan</Nav.Link>
-                            <Nav.Link href="/penjualan">Penjualan</Nav.Link>
-                            <Nav.Link href="/tentang">Tentang Kami</Nav.Link>  
-                            </Nav>
-                            <Nav className="ml-auto">
-                            <Button className="btn-white-nofill mr-1" variant="primary">
-                                Masuk
-                            </Button>
-                            
-                            <Button className="btn-white" variant="primary">
-                                Daftar
-                            </Button>
-                            
-                                
-                            </Nav>
-                        </Navbar.Collapse>
-                        </Container> 
-                    </Navbar>
+                <Newnav/>
                 <div className="background-grey desc pt-5">
                     <Container>
                         <div className="row card-large">
@@ -114,31 +78,7 @@ class PembiayaanDesc extends Component{
                         </div>
                     </Container>
                 </div>
-                <footer>
-                    <Container>
-                    <div className="footer d-flex">
-                        <div className="footer-description">,
-                        <img src={logo} alt=""/>
-                        <p>Digitan bertekad membantu petani <br/>
-                            meningkatkan taraf ekonominya <br/>
-                            sekaligus investor dapat mencapai <br/>
-                            tujuan investasinya.</p>
-                        </div>
-                        <div className="ml-auto contact">
-                        <h6>Kontak Kami</h6>
-                        <li><a href="#"><img className="mr-1" src={ic_call} alt=""/> +621234567891</a></li>
-                        <li><a href="#"><img className="mr-1" src={ic_email} alt=""/> coco@digitan.com</a></li>
-                        </div>
-                        <div className="social-media">
-                        <h6>Social Media</h6>
-                        <li><a href="#"><img className="mr-1" src={ic_insta} alt=""/> Digitan </a></li>
-                        <li><a href="#"><img className="mr-1" src={ic_fb} alt=""/> Digitan </a></li>
-                        <li><a href="#"><img className="mr-1" src={ic_youtube} alt=""/> Digitan </a></li>
-                        </div>
-                    </div>
-                    <hr/>
-                    </Container>
-                </footer>
+                <Myfooter/>
             </div>
         )
     };
