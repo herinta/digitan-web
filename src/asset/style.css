@@ -317,8 +317,8 @@ footer{
 
 @media screen and (max-width: 568px){
     .tittle-home{
-        font-size: 30px;
-        line-height: 20px;
+        font-size: 38px;
+        line-height: 40px;
     }
     .header-image{
         display: none;
@@ -333,7 +333,9 @@ footer{
         flex-direction: column;
     }
     .illus-petani-investor .illus1 img{
-        width: 280px;
+        margin-top: 28px;
+        width: 300px;
+        margin-bottom: 28px;
     }
     .pencapaian .content{
         flex-direction: column;
