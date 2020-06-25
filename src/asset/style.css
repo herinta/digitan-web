@@ -317,8 +317,9 @@ footer{
 
 @media screen and (max-width: 568px){
     .tittle-home{
-        font-size: 38px;
+        font-size: 30px;
         line-height: 40px;
+        margin-top: 25px;
     }
     .header-image{
         display: none;
@@ -331,11 +332,17 @@ footer{
     }
     .illus-petani-investor{
         flex-direction: column;
+        margin-top: 100px;
+        font-size: 20px;
     }
     .illus-petani-investor .illus1 img{
         margin-top: 28px;
         width: 300px;
+        margin-left: 30px;
         margin-bottom: 28px;
+    }
+    .illus-petani-investor .petani{
+        margin-left: 18px;
     }
     .pencapaian .content{
         flex-direction: column;
@@ -349,5 +356,24 @@ footer{
     }
     .footer {
         flex-direction: column;
+    }
+    .contact{
+        margin-top: 30px;
+    }
+    .social-media{
+        margin-top: 30px;
+    }
+    .alasan .content .img-alasan img{
+        width: 300px;
+    }
+    .alasan .item-group .item-list{
+        margin-left: -90px;
+    }
+    .card-pembiayaan{
+        width: 300px;
+        height: auto;
+    }
+    .card-pembiayaan .btn-green{
+        margin-right: 15px;
     }
 }

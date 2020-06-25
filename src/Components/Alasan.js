@@ -14,7 +14,7 @@ const Alasan = () => {
     return(
         <div className="content">
             <Row>
-                <Col md={12} sm={12} xl={4}>
+                <Col md={12} sm={12} xl={4} className="img-alasan">
                     <img src={image}/>
                 </Col>
                 <Col md={12} sm={12} xl={8}>
