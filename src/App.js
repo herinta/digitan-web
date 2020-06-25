@@ -157,7 +157,7 @@ function App(){
                   <div className="d-flex"><h5 className="mr-3">Tidak Memiliki Kemampuan Bertani</h5><img src={require('./asset/image/ic_cross.svg')}/></div>
                   <div className="d-flex"><h5 className="mr-3">Memiliki Dana yang Dapat Disalurkan untuk Modal</h5><img src={require('./asset/image/ic_ceklist.svg')}/></div>
                 </div>
-                <img src={illus1} alt=""/>
+               <div className="illus1"> <img src={illus1} alt=""/></div>
                 <div div className="petani">
                   <h2>Petani</h2>
                   <div className="d-flex"><img src={require('./asset/image/ic_ceklist.svg')}/><h5 className="ml-3">Tidak Memiliki Lahan</h5></div>

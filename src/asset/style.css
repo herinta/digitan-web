@@ -211,10 +211,7 @@ footer{
   .footer li{
     margin-top: 10px;
   }
-  .footer .social-media{
-      margin-left: 100px;
-      margin-right: 50px;
-  }
+ 
 
 /* Langding Page */
 .Modal{
@@ -335,7 +332,7 @@ footer{
     .illus-petani-investor{
         flex-direction: column;
     }
-    .illus-petani-investor img{
+    .illus-petani-investor .illus1 img{
         width: 280px;
     }
     .pencapaian .content{
@@ -346,6 +343,9 @@ footer{
         flex-direction: column;
     }
     .cara-kerja-card{
+        flex-direction: column;
+    }
+    .footer {
         flex-direction: column;
     }
 }
