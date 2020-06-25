@@ -21,6 +21,7 @@ import ic_search from '../asset/image/ic_search.svg';
 import kayumanis from '../asset/image/kayumanis.svg';
 import beras from '../asset/image/beras.svg';
 import jagung from '../asset/image/jagung.svg'
+import { Newnav, Myfooter } from '../Components/MyComponents';
 
 import '../asset/style.css';
 
@@ -28,32 +29,7 @@ class pembiayaan extends Component {
     render(){
         return(
             <div className="Background-grey">
-                <Navbar className="navbar" collapseOnSelect expand="lg"  variant="light">
-     
-                    <Container>
-                        <Navbar.Brand className="logo-brand" href="/"><img src={ logo } alt=""/></Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="nav-link">
-                            <Nav.Link href="/">Beranda</Nav.Link>
-                            <Nav.Link href="/pembiayaan">Pembiayaan</Nav.Link>
-                            <Nav.Link href="/penjualan">Penjualan</Nav.Link>
-                            <Nav.Link href="/tentang">Tentang Kami</Nav.Link>  
-                            </Nav>
-                            <Nav className="ml-auto">
-                            <Button className="btn-white-nofill mr-1" variant="primary">
-                                Masuk
-                            </Button>
-                           
-                            <Button className="btn-white" variant="primary">
-                                Daftar
-                            </Button>
-                           
-                                
-                            </Nav>
-                        </Navbar.Collapse>
-                        </Container> 
-                    </Navbar>
+                    <Newnav/>
                     <Container>
                     <section className="pembiayaan">
                         
@@ -268,6 +244,7 @@ class pembiayaan extends Component {
                         
                     </section>
                 </Container>
+                <Myfooter/>
             </div>
         )
     };

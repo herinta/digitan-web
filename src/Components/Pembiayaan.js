@@ -44,7 +44,7 @@ const Pembiayaan = () => {
             <Card className="card card-pembiayaan">
                 <img src={beras}/>
                 <div className="tittle-card">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">Kayu Manis</h5>
                 </div>
                 <div className="list-group list-group-flush">
                     <div className="list-group-item d-flex">
@@ -76,7 +76,7 @@ const Pembiayaan = () => {
             <Card className="card card-pembiayaan">
                 <img src={jagung} alt=""/>
                 <div className="tittle-card">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">Jagung</h5>
                 </div>
                 <div className="list-group list-group-flush">
                     <div className="list-group-item d-flex">

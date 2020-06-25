@@ -20,9 +20,10 @@ export class Newnav extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="nav-link">
-              <Nav.Link className="active" href="#features">Beranda</Nav.Link>
-              <Nav.Link href="#pricing">Pembiayaan</Nav.Link>
-              <Nav.Link href="#pricing">Tentang Kami</Nav.Link>  
+            <Nav.Link href="/">Beranda</Nav.Link>
+              <Nav.Link href="/pembiayaan">Pembiayaan</Nav.Link>
+              <Nav.Link href="/penjualan">Penjualan</Nav.Link>
+              <Nav.Link href="/tentang">Tentang Kami</Nav.Link>  >  
             </Nav>
             <Nav className="ml-auto">
               <Button className="link-green">Masuk</Button>
