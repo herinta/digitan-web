@@ -23,7 +23,7 @@ export class Newnav extends React.Component {
                <Nav.Link href="/">Beranda</Nav.Link>
               <Nav.Link href="/pembiayaan">Pembiayaan</Nav.Link>
               <Nav.Link href="/penjualan">Penjualan</Nav.Link>
-              <Nav.Link href="/tentang">Tentang Kami</Nav.Link>  >  
+              <Nav.Link href="/tentang">Tentang Kami</Nav.Link>  
             </Nav>
             <Nav className="ml-auto">
               <Button className="link-green">Masuk</Button>

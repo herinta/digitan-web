@@ -26,13 +26,7 @@ import ic_close from './asset/image/ic_close.svg';
 import logo from './asset/image/logo.svg';
 import landingHeader from './asset/image/landing.svg';
 import illus1 from './asset/image/illus-petani-investor.svg';
-import ic from './asset/image/ic.svg';
-import image from './asset/image/foto-petani.svg';
-import ic_call from './asset/image/ic_call.svg';
-import ic_email from './asset/image/ic_email.svg';
-import ic_insta from './asset/image/ic_insta.svg';
-import ic_fb from './asset/image/ic_fb.svg';
-import ic_youtube from './asset/image/ic_youtube.svg';
+
 
 
 
