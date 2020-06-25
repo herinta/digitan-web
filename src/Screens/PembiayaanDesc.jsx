@@ -63,7 +63,7 @@ class PembiayaanDesc extends Component{
                             </div>
                         </div>
 
-                        <div className="row info-deskripsi">
+                        <div className="row info-deskripsi mb-5">
                             <div className="card-large col-xl-8 col-md-12 mt-5">
                                 <h3>Deskripsi</h3>
                                 <p>Kayu manis atau Cinnamomum burmannii aslinya merupakan tanaman pohon. Pohon kayu manis atau cinnamon tree adalah salah satu jenis pohon penghasil rempah-rempah yang terkenal. Aroma kayu manis diketahui tajam, terasa pedas dan manis.
@@ -78,7 +78,9 @@ class PembiayaanDesc extends Component{
                         </div>
                     </Container>
                 </div>
-                <Myfooter/>
+                <footer >
+                    <Myfooter/>
+                </footer>
             </div>
         )
     };

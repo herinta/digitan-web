@@ -185,10 +185,10 @@ function App(){
               <div className="tittle-line"><hr></hr></div>
             </div>
             <div className=" mt-3  wow animate__animated animate__zoomIn">
-              <pembiayaan/>
+              <Pembiayaan/>
             </div>
             <div className="d-flex justify-content-center">
-              <Button className="btn-green mt-5" href="">Lihat Selengkapnya</Button>
+              <Button className="btn-green mt-5" href="/pembiayaan">Lihat Selengkapnya</Button>
             </div>
              
           </section>

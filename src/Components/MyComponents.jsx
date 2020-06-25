@@ -41,20 +41,20 @@ export class Myfooter extends React.Component {
     return(
       <footer>
         <Container>
-          <div className="footer d-flex">
-            <div className="footer-description">,
+          <div className="footer row">
+            <div className="footer-description col-md-4 col-sm-12">,
               <img src={logo} alt=""/>
               <p>Digitan bertekad membantu petani <br/>
                 meningkatkan taraf ekonominya <br/>
                 sekaligus investor dapat mencapai <br/>
                 tujuan investasinya.</p>
             </div>
-            <div className="ml-auto contact">
+            <div className="ml-auto contact col-md-4 col-sm-12">
               <h6>Kontak Kami</h6>
               <li><a href="#"><img className="mr-1" src={ic_call} alt=""/> +621234567891</a></li>
               <li><a href="#"><img className="mr-1" src={ic_email} alt=""/> coco@digitan.com</a></li>
             </div>
-            <div className="social-media">
+            <div className="social-media col-md-4 col-sm-12">
               <h6>Social Media</h6>
               <li><a href="#"><img className="mr-1" src={ic_insta} alt=""/> Digitan </a></li>
               <li><a href="#"><img className="mr-1" src={ic_fb} alt=""/> Digitan </a></li>

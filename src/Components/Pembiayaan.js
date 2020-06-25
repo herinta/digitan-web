@@ -38,7 +38,7 @@ const Pembiayaan = () => {
                     
                 </div>
                 <div className="tittle-card">
-                    <button href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
+                    <a href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</a>
                 </div>
             </Card>
             <Card className="card card-pembiayaan">
@@ -70,7 +70,7 @@ const Pembiayaan = () => {
                     
                 </div>
                 <div className="tittle-card">
-                    <button href="#" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
+                    <a href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</a>
                 </div>
             </Card>
             <Card className="card card-pembiayaan">
@@ -102,7 +102,7 @@ const Pembiayaan = () => {
                     
                 </div>
                 <div className="tittle-card">
-                    <button href="#" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
+                <a href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</a>
                 </div>
             </Card>
 

@@ -275,7 +275,8 @@ footer{
 }
 .pencapaian{
     background: linear-gradient(111.07deg, #347D03 0.33%, #5FC51B 105.63%);
-    height: 482px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pencapaian{
@@ -332,6 +333,19 @@ footer{
         padding: 30px;
     }
     .illus-petani-investor{
+        flex-direction: column;
+    }
+    .illus-petani-investor img{
+        width: 280px;
+    }
+    .pencapaian .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pembiayaan .content{
+        flex-direction: column;
+    }
+    .cara-kerja-card{
         flex-direction: column;
     }
 }
