@@ -2,6 +2,11 @@ import React, { useState, Component } from 'react';
 
 import {  Navbar, Nav, Container, Button, Modal, Row, Col, Card } from 'react-bootstrap';
 
+import Alasan from './Components/Alasan';
+import Pembiayaan from './Components/Pembiayaan';
+import Pencapaian from './Components/Pencapaian';
+import Cards from './Components/Cards';
+import { Newnav, Myfooter } from './Components/MyComponents'
 
 import './asset/style.css';
 
@@ -170,36 +175,7 @@ function App(){
               <div className="tittle-line"><hr></hr></div>
             </div>
             <div className="content mt-3  wow animate__animated animate__zoomIn">
-            <div className="cara-kerja-card d-flex justify-content-between">
-                <Card className="card-small">
-                    <img src={ic_modal}/>
-                    <Card.Body>
-                        <h5>Mendapat Modal</h5>
-                        <h6>Dapatkan modal dengan mudah dan cepat dari para Investor</h6>
-                    </Card.Body>
-                </Card>
-                <Card className="card-small">
-                    <img src={ic_pertanian}/>
-                    <Card.Body>
-                        <h5>Memulai Pertanian</h5>
-                        <h6>Petani memulai proses pertanian di bawah pengawasan DigiTan</h6>
-                    </Card.Body>
-                </Card>
-                <Card className="card-small">
-                    <img src={ic_panen}/>
-                    <Card.Body>
-                        <h5>Jual Hasil Panen</h5>
-                        <h6>DigiTan akan membantu menjual hasil panenmu kepada para mitra kami</h6>
-                    </Card.Body>
-                </Card>
-                <Card className="card-small">
-                    <img src={ic_hasil}/>
-                    <Card.Body>
-                        <h5>Bagi Hasil</h5>
-                        <h6>DigiTan akan membagi keuntungan sesuai dengan kesepakatan</h6>
-                    </Card.Body>
-                </Card>
-            </div>
+              <Cards/>
             </div>
           </section>
 
@@ -209,105 +185,7 @@ function App(){
               <div className="tittle-line"><hr></hr></div>
             </div>
             <div className=" mt-3  wow animate__animated animate__zoomIn">
-            <div className="content d-flex justify-content-between">
-              <Card className="card card-pembiayaan">
-                    <img src={kayumanis}/>
-                    <div className="tittle-card">
-                        <h5 className="card-title">Kayu Manis</h5>
-                    </div>
-                    <div className="list-group list-group-flush">
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Harga</h6>
-                                <p>Rp.2.000.000</p>
-                            </div>
-                            <div className="item">
-                                <h6>Bagi Hasil</h6>
-                                <p>20%/tahun</p>
-                            </div>
-                        </div>
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Stok</h6>
-                                <p>34 slot</p>
-                            </div>
-                            <div className="item">
-                                <h6>Tersisa</h6>
-                                <p>12 slot</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div className="tittle-card">
-                        <button href="/deskripsi-pembiayaan" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
-                    </div>
-                </Card>
-                <Card className="card card-pembiayaan">
-                    <img src={beras}/>
-                    <div className="tittle-card">
-                        <h5 className="card-title">Card title</h5>
-                    </div>
-                    <div className="list-group list-group-flush">
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Harga</h6>
-                                <p>Rp.2.000.000</p>
-                            </div>
-                            <div className="item">
-                                <h6>Bagi Hasil</h6>
-                                <p>20%/tahun</p>
-                            </div>
-                        </div>
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Stok</h6>
-                                <p>34 slot</p>
-                            </div>
-                            <div className="item">
-                                <h6>Tersisa</h6>
-                                <p>12 slot</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div className="tittle-card">
-                        <button href="#" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
-                    </div>
-                </Card>
-                <Card className="card card-pembiayaan">
-                    <img src={jagung} alt=""/>
-                    <div className="tittle-card">
-                        <h5 className="card-title">Card title</h5>
-                    </div>
-                    <div className="list-group list-group-flush">
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Harga</h6>
-                                <p>Rp.2.000.000</p>
-                            </div>
-                            <div className="item">
-                                <h6>Bagi Hasil</h6>
-                                <p>20%/tahun</p>
-                            </div>
-                        </div>
-                        <div className="list-group-item d-flex">
-                            <div className="item">
-                                <h6>Stok</h6>
-                                <p>34 slot</p>
-                            </div>
-                            <div className="item">
-                                <h6>Tersisa</h6>
-                                <p>12 slot</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div className="tittle-card">
-                        <button href="#" className="btn-green mt-1 ml-6">Lihat Pembiayaan</button>
-                    </div>
-                </Card>
-
-            </div>
+              <pembiayaan/>
             </div>
             <div className="d-flex justify-content-center">
               <Button className="btn-green mt-5" href="">Lihat Selengkapnya</Button>
@@ -372,65 +250,13 @@ function App(){
                 <div className="tittle-line"><hr></hr></div>
               </div>
               <div className=" mt-3  wow animate__animated animate__zoomIn">
-              <div className="content">
-                    <Row>
-                        <Col md={12} sm={12} xl={4}>
-                            <img src={image}/>
-                        </Col>
-                        <Col md={12} sm={12} xl={8}>
-                        <div className="item-group d-flex justify-content-center flex-wrap">
-                            <div className="item-list">
-                                <img src={ic}/>
-                                <h5 className="mt-3">Mudah dan cepat</h5>
-                                <p>Mudah dalam mencari pembiayaan dan cepat dalam memperoleh pembiayaan</p>
-                            </div>
-                            <div className="item-list">
-                                <img src={ic}/>
-                                <h5 className="mt-3">Berdampak sosial</h5>
-                                <p>Investasi sekaligus membantu meningkatkan taraf hidup petani</p>
-                            </div>
-                            <div className="item-list">
-                                <img src={ic}/>
-                                <h5 className="mt-3">Bagi hasil adil dan transparan</h5>
-                                <p>Pembagian hasil yang adil dan transparan serta tidak memberatkan mitra tani dalam pengembalian</p>
-                            </div>
-                            <div className="item-list">
-                                <img src={ic}/>
-                                <h5 className="mt-3">Ketahanan pangan</h5>
-                                <p>Ikut berpartisipasi dalam peningkatan produksi pangan dalam negeri</p>
-                            </div>
-                        </div>
-                        </Col>
-                        
-                    </Row>
-                </div>
+                <Alasan/>
+              
               </div>
            </Container>
         </section>
         <footer>
-        <Container>
-          <div className="footer d-flex">
-            <div className="footer-description">,
-              <img src={logo} alt=""/>
-              <p>Digitan bertekad membantu petani <br/>
-                meningkatkan taraf ekonominya <br/>
-                sekaligus investor dapat mencapai <br/>
-                tujuan investasinya.</p>
-            </div>
-            <div className="ml-auto contact">
-              <h6>Kontak Kami</h6>
-              <li><a href="#"><img className="mr-1" src={ic_call} alt=""/> +621234567891</a></li>
-              <li><a href="#"><img className="mr-1" src={ic_email} alt=""/> coco@digitan.com</a></li>
-            </div>
-            <div className="social-media">
-              <h6>Social Media</h6>
-              <li><a href="#"><img className="mr-1" src={ic_insta} alt=""/> Digitan </a></li>
-              <li><a href="#"><img className="mr-1" src={ic_fb} alt=""/> Digitan </a></li>
-              <li><a href="#"><img className="mr-1" src={ic_youtube} alt=""/> Digitan </a></li>
-            </div>
-          </div>
-          <hr/>
-        </Container>
+          <Myfooter/>
       </footer>
       </div>
        

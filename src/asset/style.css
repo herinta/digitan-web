@@ -319,7 +319,8 @@ footer{
 
 @media screen and (max-width: 568px){
     .tittle-home{
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 20px;
     }
     .header-image{
         display: none;
@@ -329,5 +330,8 @@ footer{
     }
     .card-large{
         padding: 30px;
+    }
+    .illus-petani-investor{
+        flex-direction: column;
     }
 }
