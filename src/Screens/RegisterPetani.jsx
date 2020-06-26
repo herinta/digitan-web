@@ -15,9 +15,7 @@ class Register extends Component {
         <div className="register">
           <div className="content">
               <h1>Regristasi</h1>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
-                elit, sed do eiusmod tempor incididunt ut labore et <br/>
-                dolore magna </p>
+              <p>Daftar sebagai Petani</p>
               <form className="">
                 <input className='' id="name" type='text' placeholder='Name'/>
                 <input className='' id="numberphone" type='text' placeholder='Number Phone'/>

@@ -20,7 +20,7 @@ const Penjualan= () => {
                     <Card>
                         <Card.Img variant="top" src={kayumanis} />
                         <Card.Body>
-                            <Card.Title>Kayu Manis Jambi</Card.Title>
+                            <Card.Title><a href="/deskripsi-penjualan"> Kayu Manis Jambi</a></Card.Title>
                             <h5>Rp. 10.000/kg</h5>
                             
                             <h6 className="mt-3">Minimal pembelian : 1 ton </h6>

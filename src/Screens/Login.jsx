@@ -1,25 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import '../asset/style.css';
 
 import { Container } from 'react-bootstrap';
 import { Newnav, Myfooter } from '../Components/MyComponents';
 
 import ic_facebook from '../asset/image/ic_facebook.svg'
+import { Link, withRouter } from 'react-router-dom'
+import firebase from './firebase';
 
-class LoginInvestor extends Component {
-  render(){
-    return(
-      <div className=''>
+
+function SignIn(props){
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  return(
+    <main>
       <Newnav/>
       <Container>
         <div className="register">
           <div className="content">
               <h1>Login</h1>
-              
+              <p>Sebagai Investor</p>
               <form className="">
-                <input className='' id="email" type='email' placeholder='Email' />
-                <input className='' id="password" type='password' placeholder='Password' />
-                <button type='submit'className='btn-submit'>
+                <input className=''id="email" autoComplete="off" name="email" autoFocus value={email} onChange={e => setEmail(e.target.value)} placeholder='Email' />
+                <input className=''type="password" id="password" autoComplete="off" value={password} onChange={e => setPassword(e.target.value)}  />
+                <button type='submit'className='btn-submit' onClick={login}>
                  Login
                 </button>
                 <div className="d-flex justify-content-center">
@@ -31,9 +37,17 @@ class LoginInvestor extends Component {
         </div>
         <Myfooter/>
       </Container>
-    </div>
-    )
+    </main>                 
+  )
+  
+  async function login() {
+    try {
+      await firebase.login(email, password)
+      props.history.replace('/')
+    } catch(error) {
+      alert(error.message)
+    }
   }
 }
 
-export default LoginInvestor;
+export default withRouter(SignIn);

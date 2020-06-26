@@ -65,3 +65,20 @@
         </div>
 
       </div>
+
+       <div className="background-white mt-5">
+                        <h4>Detail Produk</h4>
+                        <div className="form-group mt-4">
+                            
+                            <h6><span><img className="mr-4" src={dot} alt=""/></span>Harga per kilogram</h6>
+                            <input class="form-control" type="text" placeholder="Cth.Rp. 200.000"></input>
+                            
+                            <h6 className="mt-3"><span><img className="mr-4" src={dot} alt=""/></span>Minimal Pembelian</h6>
+                            <input class="form-control" type="text" placeholder="Cth. 1 Ton"></input>
+                            
+                            <h6 className="mt-3"><span><img className="mr-4" src={dot} alt=""/></span>Persediaan / stok</h6>
+                            <input class="form-control" type="text" placeholder="Cth. 10.000 Ton"></input>
+
+                           
+                        </div>
+                    </div>

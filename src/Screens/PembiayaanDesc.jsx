@@ -7,13 +7,14 @@ import '../asset/style.css';
 import { Newnav, Myfooter } from '../Components/MyComponents';
 
 import kayu from '../asset/image/kayujambi.svg';
+import add from '../asset/image/add.svg'
 
 class PembiayaanDesc extends Component{
     render(){
         return(
             <div>
                 <Newnav/>
-                <div className="background-grey desc pt-5">
+                <div className="background-grey desc py-5 px-5">
                     <Container>
                         <div className="row card-large">
                             <div className="col-xl-5 col-md-12">
@@ -28,36 +29,36 @@ class PembiayaanDesc extends Component{
                                         <h5>12 April 2020</h5>
                                     </div>
                                     <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
+                                        <h6>Proyek Berjalan</h6>
                                         <h5>12 April 2020</h5>
+                                    </div>
+                                    <div className="item-group">
+                                        <h6>Periode Investasi</h6>
+                                        <h5>1 Tahun</h5>
+                                    </div>
+                                    <div className="item-group">
+                                        <h6>Bagi Hasil</h6>
+                                        <h5>12% / tahun</h5>
+                                    </div>
+                                    <div className="item-group">
+                                        <h6>Periode Bagi Hasil</h6>
+                                        <h5>3 Bulan</h5>
+                                    </div>
+                                    <div className="item-group">
+                                        <h6>Tersisa</h6>
+                                        <h5>12 slot</h5>
                                     </div>
                                     <div className="item-group">
                                         <h6>Proyek Dibuka</h6>
                                         <h5>12 April 2020</h5>
                                     </div>
                                     <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
+                                        <h6>Terdanai</h6>
+                                        <h5>12 slot</h5>
                                     </div>
                                     <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
-                                    </div>
-                                    <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
-                                    </div>
-                                    <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
-                                    </div>
-                                    <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
-                                    </div>
-                                    <div className="item-group">
-                                        <h6>Proyek Dibuka</h6>
-                                        <h5>12 April 2020</h5>
+                                        <h6>Total slot </h6>
+                                        <h5>24 slot</h5>
                                     </div>
                                 </div>
                             </div>
@@ -74,6 +75,24 @@ class PembiayaanDesc extends Component{
                             
                             <div className="card-white col-xl-4 col-md-12 mt-5">
                                <h3>Mulai Pembiayaan</h3>
+
+                               <h6 className="mt-5"> Jumlah Slot Disalurkan</h6>
+                               <div className="d-flex">
+                                    <img src={add} alt=""/>
+                                    <h6 className="mt-2 ml-2">Rp. 4.000.000</h6>
+                               </div>
+
+                               <p className="mt-3">Total Pengembalian Hingga</p>
+                               <div className="card">
+                                   <div className="d-flex justify-content-center"><h6>Rp. 4.480.000</h6></div>
+                               </div>
+                               <div className="d-flex justify-content-center">
+                               <h6>12 % Keuntungan</h6>
+                               </div>
+
+                               <button className="btn btn-green mt-5">Salurkan Pembiayaan</button>
+
+
                             </div>
                         </div>
                     </Container>
